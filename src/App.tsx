@@ -5,7 +5,7 @@ import { Button } from './components';
 
 function App() {
   return (
-    <Button type='primary' label='button' underlined />
+    <Button type='primary' label='button' outlined />
   );
 }
 
