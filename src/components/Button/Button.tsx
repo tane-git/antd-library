@@ -8,7 +8,7 @@ import * as React from 'react';
 import cx from "classnames";
 
 // antd
-import { Button as Button_antd } from 'antd';
+import { Button as AntdButton } from 'antd';
 import { NativeButtonProps } from "antd/lib/button/button.d";
 
 // styles
@@ -34,7 +34,7 @@ export const Button: React.FC<IProps> = ({
   iconRight
 }) => {
   return (
-    <Button_antd
+    <AntdButton
       // antd props
       type={type}
       size={size}
@@ -55,9 +55,9 @@ export const Button: React.FC<IProps> = ({
         type === 'link' && styles.link,
         type === 'text' && styles.text,
         type === 'default' && styles.default
-        )}
+      )}
     >
       {label}{iconRight}
-    </Button_antd>
+    </AntdButton>
   );
 }
